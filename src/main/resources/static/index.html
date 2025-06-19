@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>도서 관리 시스템</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page-block">
+    <div class="container">
+        <div class="header">
+            <div class="title">도서 관리 시스템</div>
+        </div>
+        <div class="content">
+            <div class="search">
+                <div class="create-date">
+                    <input type="date" placeholder="도서 등록일"/>
+                </div>
+                <div class="status-wrapper">
+                    <select class="status">
+                        <option value="reservation">예약</option>
+                        <option value="available">대기</option>
+                    </select>
+                </div>
+                <div class="search-bar">
+                    <input placeholder="도서명, 저자명">
+                </div>
+                <div class="btn-wrapper">
+                    <div class="btn">검색</div>
+                </div>
+            </div>
+            <div class="table">
+                <div class="row header">
+                    <div class="cell">
+                        <div class="checkbox"></div>
+                    </div>
+                    <div class="cell">
+                        도서명
+                    </div>
+                    <div class="cell">
+                        저자
+                    </div>
+                    <div class="cell">
+                        상태
+                    </div>
+                    <div class="cell">
+                        예약
+                    </div>
+                </div>
+                <div class="row body">
+                    <div class="cell">
+                        <div class="checkbox"></div>
+                    </div>
+                    <div class="cell">
+                        <input name="title">
+                    </div>
+                    <div class="cell">
+                        <input name="author">
+                    </div>
+                    <div class="cell">
+                        <input name="status">
+                    </div>
+                    <div class="cell">
+                        <input name="reservation">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btn-wrapper" style="justify-content: flex-end">
+        <div class="btn">추가</div>
+        <div class="btn">삭제</div>
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
